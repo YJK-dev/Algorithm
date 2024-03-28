@@ -11,7 +11,7 @@ data = [] # 시리얼번호 저장할 리스트
 
 # 시리얼번호 입력받아 저장하기
 for _ in range(n):
-    data.append(input().rstrip())
+    data.append(input())
 
 # 첫번째 정렬 조건) 시리얼번호 길이 짧은 순서
 # 두번째 정렬 조건) 시리얼번호 자릿수의 합이 작은 순서
