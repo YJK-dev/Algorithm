@@ -1,13 +1,11 @@
 def solution(info, edges):
     visited = [False] * len(info)
     visited[0] = True
-    global answer
-    answer = 0
+    answer = []
     
     def dfs(sheep, wolf):
-        global answer
         if sheep > wolf:
-            answer = max(answer, sheep)
+            answer.append(sheep)
         else:
             return
     
@@ -23,5 +21,5 @@ def solution(info, edges):
         
     dfs(1, 0)
     
-    return answer
+    return max(answer)
         
