@@ -7,7 +7,7 @@ z = y * 100 // x # 승률 계산
 if z >= 99:
     print(-1)
 else:
-    answer = 0
+    answer = -1
     start = 1
     end = x
 
